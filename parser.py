@@ -19,4 +19,4 @@ parsed_args = parser.parse_args()
 # print("========")
 # print(argparse.ArgumentParser.mro())
 
-print(parsed_args.square ** 2)
+print(int(parsed_args.square) ** 2)
