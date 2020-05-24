@@ -1,8 +1,9 @@
-"""source: https://docs.python.org/3/howto/argparse.html"""
+"""Calculate X to the power of Y"""
+# source: https://docs.python.org/3/howto/argparse.html#id1
 
 import argparse
 
-parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser(description=__doc__)
 group = parser.add_mutually_exclusive_group()
 group.add_argument("-v", "--verbose", action="store_true")
 group.add_argument("-q", "--quiet", action="store_true")
