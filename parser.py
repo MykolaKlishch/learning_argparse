@@ -1,7 +1,11 @@
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("square", help="display a square of a given number")
+parser.add_argument(
+    "square",
+    help="display a square of a given number",
+    type=int
+)
 parsed_args = parser.parse_args()
 
 # print("========")
@@ -19,4 +23,4 @@ parsed_args = parser.parse_args()
 # print("========")
 # print(argparse.ArgumentParser.mro())
 
-print(int(parsed_args.square) ** 2)
+print(parsed_args.square ** 2)
