@@ -2,8 +2,9 @@ import argparse
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
-    "--verbosity",
+    "-v", "--verbose",
     help="increase output verbosity",
+    action='store_true'
 )
 parsed_args = parser.parse_args()
 
@@ -21,5 +22,5 @@ parsed_args = parser.parse_args()
 # print(parsed_args.echo)
 # print("========")
 # print(argparse.ArgumentParser.mro())
-if parsed_args.verbosity:
+if parsed_args.verbose:
     print('verbosity turned on')
